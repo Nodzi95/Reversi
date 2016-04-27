@@ -9,8 +9,8 @@ package ija.ija2015.homework2.board;
  *
  * @author vratislav
  */
-public final class Board {
-    static public Field[][] fieldArray;
+public class Board {
+    private Field[][] fieldArray;
     private Rules rules;
     
     public Board(Rules rules) {
@@ -36,14 +36,6 @@ public final class Board {
     
     public Field getField(int row, int col) {
         return fieldArray[row][col];
-    }
-    
-    public Field[][] saveFields(){
-    	return fieldArray;
-    }
-    
-    public void loadFields(Field[][] save){
-    	this.fieldArray = save;
     }
     
     public Rules getRules() {

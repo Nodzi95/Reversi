@@ -36,8 +36,4 @@ public class Disk {
         hash = 29 * hash + (this.isWhite ? 1 : 0);
         return hash;
     }
-    public String toString() {
-		if(this.isWhite()) return "white";
-		else return "black";
-	}
 }

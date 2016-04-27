@@ -136,7 +136,4 @@ public class BoardField implements Field {
         hash = 29 * hash + this.col;
         return hash;
     }
-
-    
-    
 }

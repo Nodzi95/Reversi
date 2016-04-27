@@ -6,13 +6,12 @@
 package ija.ija2015.homework2.game;
 
 import ija.ija2015.homework2.board.Board;
-
 /**
  *
  * @author vratislav
  */
-public class Game implements Cloneable{
-    public Board board;
+public class Game {
+    private Board board;
     private Player black;
     private Player white;
     private Player current;
@@ -20,10 +19,7 @@ public class Game implements Cloneable{
     public Game(Board board) {
         this.board = board;
        // this.current = white;
-    }/*
-    public Game(Game another){
-    	this.board = another.board;
-    }*/
+    }
     
     public boolean addPlayer(Player player) {
         if (player.isWhite()) {
@@ -68,7 +64,4 @@ public class Game implements Cloneable{
     public Board getBoard() {
         return this.board;
     }
-    
-    
-    
 }
